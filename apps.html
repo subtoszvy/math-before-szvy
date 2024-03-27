@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps - Szvy Central</title>
+  <link rel="icon" type="image/x-icon" href="https://fluffy-disco-os-sd-sd.netlify.app/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=PT+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #222;
+      color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 2px solid #4CAF50;
+      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #logo {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    #searchBar {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #4CAF50;
+      border-radius: 4px;
+      margin-left: 10px;
+      background-color: black;
+      color: white;
+    }
+
+    #searchButton {
+      padding: 8px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #searchButton:hover {
+      background-color: #45a049;
+    }
+
+    .content-container {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .row {
+      margin-bottom: 20px; /* Add margin between rows */
+      display: flex;
+      justify-content: center; /* Center the buttons */
+      align-items: center;
+    }
+
+    .placeholder-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 5px; /* Adjust the margin to control the spacing between buttons */
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #222;
+      color: #4CAF50;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+      border-top: 2px solid #4CAF50;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .close-button {
+      position: relative;
+      top: 0px;
+      right: 5px; /* Adjust to your preferred value */
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: red; /* Make it red */
+      background-color: white; /* Add a white background */
+      padding: 1px 5px; /* Add padding for better visibility */
+      border-radius: 3px; /* Optional: Add border radius for a rounded look */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Assuming your logo is an image with the id "logo" -->
+    <div id="logo-container">
+      <a href="index.html">
+        <img id="logo" src="logo.jpeg" alt="Logo">
+      </a>
+    </div>
+    Apps
+    <input type="text" id="searchBar" placeholder="Search...">
+    <button id="searchButton" onclick="searchGames()">Search</button>
+  </header>
+
+  <body>
+    <div class="content-container">
+      <!-- New Row 0 (Placeholder Row) -->
+      <div class="row">
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='app-pages/discord.html'">Discord</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='app-pages/tdw.html'">Thirty Dollar Website</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='app-pages/win11.html'">Windows 11</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='app-pages/youtube.html'">YouTube</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='app-pages/tiktok.html'">TikTok</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='app-pages/fluid.html'">WebGL Fluids</button>
+        </div>
+      </div>more coming eventually
+
+    <script>
+      function hideFooter() {
+          document.getElementById('myFooter').style.display = 'none';
+        }
+
+        function searchGames() {
+          var input, filter, rows, placeholders, i, txtValue;
+          input = document.getElementById("searchBar");
+          filter = input.value.toUpperCase();
+          rows = document.getElementsByClassName("row");
+
+          for (i = 0; i < rows.length; i++) {
+            placeholders = rows[i].getElementsByClassName("hyperlink-container");
+            for (var j = 0; j < placeholders.length; j++) {
+              txtValue = placeholders[j].textContent || placeholders[j].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                rows[i].style.display = "";
+                break;
+              } else {
+                rows[i].style.display = "none";
+              }
+            }
+          }
+        }
+    </script>
+  </body>
+
+</html>

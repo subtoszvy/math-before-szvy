@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - Szvy Central</title>
+	<link rel="icon" type="image/x-icon" href="https://fluffy-disco-os-sd-sd.netlify.app/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=PT+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #222;
+      color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 2px solid #4CAF50;
+      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #logo {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    #searchBar {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #4CAF50;
+      border-radius: 4px;
+      margin-left: 10px;
+      background-color: black;
+      color: white;
+    }
+
+    #searchButton {
+      padding: 8px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #searchButton:hover {
+      background-color: #45a049;
+    }
+
+    .content-container {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .row {
+      margin-bottom: 20px; /* Add margin between rows */
+      display: flex;
+      justify-content: center; /* Center the buttons */
+      align-items: center;
+    }
+
+    .placeholder-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 5px; /* Adjust the margin to control the spacing between buttons */
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #222;
+      color: #4CAF50;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+      border-top: 2px solid #4CAF50;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .close-button {
+      position: relative;
+      top: 0px;
+      right: 5px; /* Adjust to your preferred value */
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: red; /* Make it red */
+      background-color: white; /* Add a white background */
+      padding: 1px 5px; /* Add padding for better visibility */
+      border-radius: 3px; /* Optional: Add border radius for a rounded look */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Assuming your logo is an image with the id "logo" -->
+    <div id="logo-container">
+      <a href="index.html">
+        <img id="logo" src="logo.jpeg" alt="Logo">
+      </a>
+    </div>
+    Games
+  </header>
+
+  <body>
+    <div class="content-container">
+      <!-- New Row 0 (Placeholder Row) -->
+      <div class="row">
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/fortnite.html'">Fortnite (WORKING)</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/roblox-main.html'">Roblox</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/cod-mobile-main.html'">Call Of Duty</button>
+        </div>
+        <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/geodash.html'">Geometry Dash</button>
+          </div>
+                  <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/subway-surfers.html'">Subway Surfers</button>
+          </div>
+                  <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/among-us.html'">Among Us</button>
+          </div>
+         	      <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/2048.html'">2048</button>
+          </div>
+          </div>
+       <div class="row">
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/cookie-clicker.html'">Cookie Clicker</button>
+          </div>
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/bitlife.html'">Bitlife</button>
+          </div>
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/flappy-bird.html'">Flappy Bird</button>
+          </div>
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/minecraft.html'">Minecraft</button>
+          </div>
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/suika.html'">Suika</button>
+          </div>
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/paper-io-2.html'">Paperio 2</button>
+          </div>
+          <div class="placeholder-container">
+          <button class="button" onclick="window.location.href='game-pages/slope.html'">Slope</button>
+          </div>
+       </div>
+       <div class="row">
+      	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/superhot.html'">Superhot</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/cluster-rush.html'">Cluster Rush</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/fnf.html'">FNF</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/retro-bowl.html'">Retrobowl</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/crossy-road.html'">Crossy Road</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/1v1-lol.html'">1v1.lol</button>
+        </div>
+       </div>
+       <div class="row">
+      	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/stickman-hook.html'">Stickman Hook</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/fnaf.html'">FNAF</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/fnaf-2.html'">FNAF 2</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/smash-karts.html'">Smash Karts</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/sm64.html'">Super Mario 64</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/mk-ss.html'">Mario Kart Super Circut</button>
+        </div>
+        </div>
+     <div class="row">
+     	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/smb3.html'">Super Mario Bros. 3</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/smb.html'">Super Mario Bros.</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/tetris.html'">Tetris</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/ovo.html'">OvO</button>
+        </div>
+        <div class="placeholder-container">
+       <button class="button" onclick="window.location.href='game-pages/bad-time-sim.html'">Bad Time Sim</button>
+        </div>
+        <div class="placeholder-container">
+     <button class="button" onclick="window.location.href='game-pages/driftboss.html'">Drift Boss</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/fbwg.html'">Fire Boy and Water Girl</button>
+        </div>
+     </div>
+       <div class="row">
+       
+     	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/ducklife.html'">Ducklife</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/ducklife2.html'">Ducklife 2</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/ducklife3.html'">Ducklife 3</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/ducklife4.html'">Ducklife 4</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/riddleschool.html'">Riddleschool</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/riddleschool2.html'">Riddleschool 2</button>
+        </div>
+     </div>
+    <div class="row">
+       
+     	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/riddleschool3.html'">Riddleschool 3</button>
+        </div>
+		<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/riddleschool5.html'">Riddleschool 5</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/riddletransfer.html'">Riddletransfer</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/riddletransfer2.html'">Riddletranfer 2</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/happywheels.html'">Happywheels</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/papas-pizzeria.html'">Papa's Pizzeria</button>
+        </div>
+        
+        </div>
+     </div>
+	<div class="row">
+       
+       	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/papas-burgeria.html'">Papa's Burgeria</button>
+        </div>
+      	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/papas-pancakeria.html'">Papa's Pancakeria</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/cupcakeria.html'">Papa's Cupcakeria</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/hotdogeria.html'">Papa's Hot Doggeria</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/wingeria.html'">Papa's Wingeria</button>
+        </div>
+        <div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/donuteria.html'">Papa's Donuteria</button>
+        </div>
+        </div>
+	<div class="row">
+       
+       	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/basketball-legends.html'">Basketball Legends</button>
+        </div>
+	<div class="placeholder-container">
+        <button class="button" onclick="window.location.href='game-pages/agario.html'">Agar.io</button>
+        </div>
+		
+        </div>
+	  
+     </div>
+
+
+    <footer id="myFooter">
+        <span class="close-button" onclick="hideFooter()">X</span>
+        <span>All games featured on this site are the property of their respective owners. Szvy Central is not affiliated with any game developers or publishers. Any trademarks used on this site are the property of their respective owners.</span>
+        <span>For inquiries, please contact <a href="mailto:unblocked247buisness@gmail.com">unblocked247buisness@gmail.com</a>.</span>
+      </footer>
+
+    <script>
+      function hideFooter() {
+          document.getElementById('myFooter').style.display = 'none';
+        }
+
+        function searchGames() {
+          var input, filter, rows, placeholders, i, txtValue;
+          input = document.getElementById("searchBar");
+          filter = input.value.toUpperCase();
+          rows = document.getElementsByClassName("row");
+
+          for (i = 0; i < rows.length; i++) {
+            placeholders = rows[i].getElementsByClassName("hyperlink-container");
+            for (var j = 0; j < placeholders.length; j++) {
+              txtValue = placeholders[j].textContent || placeholders[j].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                rows[i].style.display = "";
+                break;
+              } else {
+                rows[i].style.display = "none";
+              }
+            }
+          }
+        }
+    </script>
+  </body>
+
+</html>
